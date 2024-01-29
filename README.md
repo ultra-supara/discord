@@ -1,10 +1,8 @@
-# Discord bot
-
-それぞれが独立したbotになっています。
+# Discord bot for 変人しかいないワールド
 
 ## GPT bot (`gpt/gptbot.py`)
 
-特定のチャンネルにChatGPTを常駐させます。
+特定のチャンネルにChatGPTを常駐させる
 
 ### command
 
@@ -69,11 +67,8 @@ Notionと連携で、リアクションを押した場合にNotionのデータ�
 - 自動実行設定
     - `/etc/systemd/system`
     - 各種botはsystemctlで起動時に設定をする（`.service`）
-    - arXivのRSSは米国東部時間20:30（おそらく平日のみ）なので、~~10時JST（コード内で更新ありかチェックするので毎日実行でよい）にプログラムを実行する設定にする（`.timer`を併用）~~
-        - なぜかうまくいかない（RSSが空になっている？）ので、17時JSTごろに実行するように設定するとよさそう？
 
 ## Directory structure
-
 ```
 .
 ├── dbs
